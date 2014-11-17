@@ -6,19 +6,20 @@ This code book that describes the variables, the data, and any transformations o
 There are 68 variables within the output data set. The first 2  Subject is subject and activity while the other 66 are mean value caculated for all original mean and std value from original train and testdata.
 -------------------------------
 Subject		The subject who performed the activity, it's an integer number from 1 to 30
-Activity		The activity name, there are 6 kind of activities in string: Walking,Walking_Upstairs,Walking_Downstairs,Sitting,Standing,Laying
+Activity		The activity name, there are 6 kind of activities in characters : Walking,Walking_Upstairs,Walking_Downstairs,Sitting,Standing,Laying
 
-#For the 66 variables below, here are desctiption in general:
+#For the 66 variables below, here are desctiption in general. 
+(There are 2 kind of units: gravity units 'g' for acceleration and radians/second for angular velocity, see below)
 1) t means time and f means frequency domain signal.
 2) Body means subject body while Gravity means earth gravity
-3) Acc means from accelerometer signal measurement while Gyro means from gyroscope signal measurement
-4) mean indicates the mean value of the measurements
-5) std indicates the Standard deviation value of the measurements
+3) Acc means from accelerometer signal measurement with gravity units 'g', while Gyro means from gyroscope signal measurement with unit radians/second
+4) mean indicates the mean value of the measurements.
+5) std indicates the Standard deviation value of the measurements.
 6) Jerk means Jerk signal 
 7) Mag indicates the magnitude of these three-dimensional signals were calculated using the Euclidean norm.
 6) X,Y,Z means 3-axial 
 
-tBodyAcc_mean_X					
+tBodyAcc_mean_X
 tBodyAcc_mean_Y
 tBodyAcc_mean_Z
 tBodyAcc_std_X
