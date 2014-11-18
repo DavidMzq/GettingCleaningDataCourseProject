@@ -1,16 +1,22 @@
 Getting and Cleaning Data Course Project Readme file   
 ==================   
 This Readme file explains how the script "run_analysis.R" works.   
-   
+As for the output data set and the uploaded text file, since they are not required to be ordered by the Subject, so you may find the last rows have the Subject 24 while Subject 30 rows are in the middle position.     
+*******
+
+
 #Actually, you can run it directly if you have unzipped the original data folder to your R work folder's subfolder named data like below:   
 Work folder: 				D:\Prog\R\WorkFolder\   
-Project data folder:  	 D:\Prog\R\WorkFolder\data\UCI HAR Dataset\   
+Project data folder:  	 D:\Prog\R\WorkFolder\__data__\UCI HAR Dataset\   
    
 Notice: The project profile mentioned that put the unzipped folder "UCI HAR Dataset" to work folder, but since I have a subfolder named data in work folder for all kinds of data, so I unzipped it there.   
 If you want to run this code "run_analysis.R" directly, make sure you do unzip the original zip file to the sub "data" folder instead of the root work folder.   
+-----------------------------------
+
 Then after R prompt >, run it like    
+```
 source("run_analysis.R")   
-   
+```
 # It will first judge the needed packages were installed and loaded and finally load them like below, So avoiding any network issue to download these packages, you could manully load them in advance like below, but it's not necessary.   
    
   install.packages("plyr")   
@@ -37,4 +43,6 @@ source("run_analysis.R")
 [1] "Step 6 Entered---create and output the needed tidy data---"   
 [1] "Step 6 Ended--All done. Find the needed file DataRequired.txt in work folder---"   
    
+
+
    
