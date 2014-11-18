@@ -16,6 +16,7 @@ Then after R prompt >, run it like
 ```
 source("run_analysis.R")   
 ```
+Open the file [run_analysis.R](https://github.com/DavidMzq/GettingCleaningDataCourseProject/blob/master/run_analysis.R) to see its content.
 It will first judge the needed packages were installed and loaded and finally load them like below, So avoiding any network issue to download these packages, you could manully load them in advance like below, but it's not necessary.   
 -----------------------------------
 ```
