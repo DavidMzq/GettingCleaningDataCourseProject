@@ -4,8 +4,8 @@ This Readme file explains how the script "run_analysis.R" works.
 As for the output data set and the uploaded text file, since they are not required to be ordered by the Subject, so you may find the last rows have the Subject 24 while Subject 30 rows are in the middle position.     
 *******
 
-
-#Actually, you can run it directly if you have unzipped the original data folder to your R work folder's subfolder named data like below:   
+Actually, you can run it directly if you have unzipped the original data folder to your R work folder's subfolder named data like below:   
+-----------------------------------
 Work folder: 				D:\Prog\R\WorkFolder\   
 Project data folder:  	 D:\Prog\R\WorkFolder\__data__\UCI HAR Dataset\   
    
@@ -17,18 +17,20 @@ Then after R prompt >, run it like
 ```
 source("run_analysis.R")   
 ```
-# It will first judge the needed packages were installed and loaded and finally load them like below, So avoiding any network issue to download these packages, you could manully load them in advance like below, but it's not necessary.   
-   
+It will first judge the needed packages were installed and loaded and finally load them like below, So avoiding any network issue to download these packages, you could manully load them in advance like below, but it's not necessary.   
+-----------------------------------
+```
   install.packages("plyr")   
   library(plyr)   
   install.packages("LaF")   
   library(LaF)   
   install.packages("data.table")   
   library(data.table)   
-   
-# After load needed packages, it will begin do all the Transformations steps described in CodeBook.md.   
-   
-# During its running process, it could output indicator message like below:   
+```
+After load needed packages, it will begin do all the Transformations steps described in CodeBook.md.   
+-----------------------------------
+During its running process, it could output indicator message like below:   
+*******
 [1] "Step 0---packages are ready loaded---"   
 [1] "Step 1 Entered---Read each data set file into different data.frame---"   
 [1] "Step 1 Ended"   

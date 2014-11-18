@@ -163,7 +163,7 @@ colnames(AllData) <- cnames
    
 you can type "names(AllData)" after R prompt to see the whole names.   
    
-# 4¡¢Extracts only the measurements on the mean and standard deviation for each measurement.   
+# 4. Extracts only the measurements on the mean and standard deviation for each measurement.   
 AllDataExtracted<-AllData[,grep("Subject|Activity|\\b-mean()\\b|\\b-std()\\b", colnames(AllData))]  # Keep those columns contain "Subject", "Activity, "-mean()" and "-std()", while all others will be removed.   
    
 # You can type "names(AllDataExtracted)" and you should find 68 variables with all variables contian "mean()" and "std()" as part of their name, and the first 2 are "Subject" and "Activity".   
@@ -201,7 +201,7 @@ Firstly, convert the current columns' type from character to number for the foll
 options(digits=9) # Set the dot digit to confirm no number accuration lose   
 AllDataExtracted[, c(3:68)] <- sapply(AllDataExtracted[, c(3:68)], as.numeric) # convert column (all together 68 columns, the first 2 are Subject and Activity)  type from string to number   
    
-# Convert from data.frmae to data.table to take advanatge of its function.   
+# Convert from data.frame to data.table to take advanatge of its function.   
 DataRequired = data.table(AllDataExtracted)   
 DataRequired <-DataRequired[,lapply(.SD,mean),by='Subject,Activity']   
    
