@@ -7,7 +7,7 @@ As for the output data set and the uploaded text file, since they are not requir
 Actually, you can run it directly if you have unzipped the original data folder to your R work folder's subfolder named data like below:   
 -----------------------------------
 Work folder: 				D:\Prog\R\WorkFolder\   
-Project data folder:  	 D:\Prog\R\WorkFolder\_data_\UCI HAR Dataset\   
+Project data folder:  	 D:\Prog\R\WorkFolder\**data**\UCI HAR Dataset\   
    
 Notice: The project profile mentioned that put the unzipped folder "UCI HAR Dataset" to work folder, but since I have a subfolder named data in work folder for all kinds of data, so I unzipped it there.   
 If you want to run this code "run_analysis.R" directly, make sure you do unzip the original zip file to the sub "data" folder instead of the root work folder.   
